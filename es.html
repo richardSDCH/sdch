@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDCH | Finance & Trade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-newsreader {
+        font-family: 'Newsreader', serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#FFF0E5] text-gray-900 font-newsreader">
+    <header class="relative h-screen overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center bg-[url(resources/images/simon-berger-twukN12EN7c-unsplash-cropped.jpg)] transition-opacity duration-[2000ms] opacity-100 z-0" id="bg1"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-[url(resources/images/diego-jimenez-A-NVHPka9Rk-unsplash.jpg)] transition-opacity duration-[2000ms] opacity-0 z-0" id="bg2"></div>
+        <nav class="w-full flex justify-between relative z-20">
+          <div id="nav-logo" class="ml-3 relative z-10"><img class="h-16 mt-2" src="./resources/images/SDCH_logo_darkBackground.png" alt="SDCH logo"></div>
+          <div class="flex items-center h-10 pr-3">
+            <div><img id="lang-flag" class="h-5 w-5 relative z-10" src="./resources/images/ES.png" alt=""></div>
+            <div class="relative inline-block z-10">
+              <button onclick="myFunction()" id="dropbtn" class="bg-none h-8 w-10 rounded-none text-white text-lg font-medium font-sans cursor-pointer hover:bg-none focus:bg-none dropbtn">ES</button>
+              <div id="myDropdown" class="hidden absolute top-9 right-1 bg-[#FFF0E5] min-w-16 shadow-md z-30 cursor-pointer">
+                <div id="lang-option-DE" class="flex items-center justify-evenly h-8 hover:bg-[#F2DFCE]">
+                  <img class="h-5 w-5" src="./resources/images/DE.png" alt="Deutsch">
+                  <a class="text-cyan-900 text-lg font-sans font-medium no-underline block" href="de.html">DE</a>
+                </div>
+                <div id="lang-option-EN" class="flex items-center justify-evenly h-8 hover:bg-[#F2DFCE]">
+                  <img class="h-5 w-5" src="./resources/images/EN.png" alt="English">
+                  <a class="text-cyan-900 text-lg font-sans font-medium no-underline block" href="index.html">EN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="w-full h-full flex justify-center relative z-10">
+          <h1 class="text-slate-50 font-medium leading-none text-[3.5rem] pt-52">Tus finanzas, tus sueños</h1>
+        </div>
+        <p id="credit1" class="absolute bottom-2 right-2 z-20 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded opacity-100 transition-opacity duration-[2000ms] ease-in-out">
+          Foto por <a href="https://unsplash.com/@simon_berger?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Simon Berger</a> en <a href="https://unsplash.com/photos/landscape-photography-of-mountains-twukN12EN7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+        <p id="credit2" class="absolute bottom-2 right-2 z-20 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded opacity-0 transition-opacity duration-[2000ms] ease-in-out">
+          Foto por <a href="https://unsplash.com/@diegojimenez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Diego Jimenez</a> en <a href="https://unsplash.com/photos/lone-road-going-to-mountains-A-NVHPka9Rk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+      </header>
+    <main>
+      <div class="w-full h-[35rem] flex items-center">
+        <h3 class="text-3xl text-slate-800 font-medium w-4/5 ml-[10%] leading-normal">Nuestra misión es empoderar a las personas para que alcancen sus metas y sueños ayudándolas a comprender los conceptos y tendencias financieras que importan, de forma que puedan tomar decisiones fundamentadas y seguras sobre su dinero.</h3>
+      </div>
+      <div id="container-1" class="w-screen flex bg-[#FFF7EF]">
+        <div class="w-1/2"><img src="./resources/images/brooke-cagle-JBwcenOuRCg-unsplash.jpg" alt="Mujer joven alegre sosteniendo una tablet" title="Foto por Brooke Cagle en Unsplash"></div>
+        <div class="w-1/2">
+          <h2 class="text-4xl mt-20 font-semibold text-cyan-900 w-4/5 ml-[15%] leading-tight">Estamos aquí para guiarte,<br> no para vender.</h2>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Fortalece tu trayectoria financiera</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Ofrecemos herramientas y contenido para ayudarte a construir una relación más sólida con el dinero, basada en la comprensión, no en la ansiedad.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Sin presión, sólo perspectiva</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Nuestro objetivo es ofrecer soporte, no discursos de venta. Nunca te presionaremos para que adquieras un producto, sólo te guiaremos hacia la claridad.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Aprende a tu ritmo</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-[70%] ml-[15%]">Bien sea que recién estés comenzando o ya estés explorando tus próximos pasos, te acompañamos donde te encuentres con conocimientos que respetan tu camino.</p>
+        </div>
+      </div>
+      <div id="container-2" class="w-screen flex bg-[#FFF7EF]">
+        <div class="w-1/2">
+          <h2 class="text-4xl mt-20 font-semibold text-cyan-900 w-4/5 ml-[12.5%] leading-tight">Las finanzas parecen complejas.<br> No tienen por qué serlo.</h2>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[12.5%]">Decodificamos las tendencias financieras</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-3/4 ml-[12.5%]">Desde las tasas de interés hasta los titulares sobre inflación, explicamos lo que está sucediendo —y lo que realmente significa para ti— en términos simples y prácticos.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[12.5%]">Contenido multiplataforma</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-3/4 ml-[12.5%]">Encuentra nuestros artículos en Medium, LinkedIn, Instagram y YouTube, incluidos podcasts cortos, publicaciones en carrusel y videos diseñados para gente real.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[12.5%]">Aprende desde del contexto y la historia</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-3/4 ml-[12.5%]">Además de las actualizaciones del mercado, publicamos artículos educativos e históricos para ayudarte a comprender el sistema financiero y cómo llegó hasta aquí.</p>
+        </div>
+        <div class="w-1/2"><img src="./resources/images/markus-spiske-XrIfY_4cK1w-unsplash.jpg" alt="Documento con un gráfico financiero" title="Foto por Markus Spiske en Unsplash"></div>
+      </div>
+      <div id="container-3" class="w-screen flex bg-[#FFF7EF]">
+        <div class="w-1/2"><img src="./resources/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="Hombre joven alegre sosteniendo un teléfono móvil" title="Foto por Bruce Mars en Unsplash"></div>
+        <div class="w-1/2">
+          <h2 class="text-4xl mt-24 font-semibold text-cyan-900 w-3/4 ml-[15%] leading-tight">Filtramos la señal del ruido.</h2>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Descubre lo que realmente importa</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Los mercados se mueven con rapidez. Te ayudamos a centrarte en los factores que impulsan los datos, no sólo en el revuelo que los rodea.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Convierte la claridad en confianza</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Saber qué es importante te permite avanzar con propósito. Facilitamos la conexión entre tus medios y tus objetivos.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Menos distracción, más dirección</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Mantenemos nuestro contenido actualizado y útil para que pases menos tiempo adivinando y más tiempo moviéndote en la dirección correcta.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="h-52 flex items-center bg-sky-900">
+        <div id="name-address" class="ml-12">
+          <h4 class="font-semibold text-slate-50 mb-2">SDCH Handelslösungen UG</h4>
+          <div class="text-slate-50">
+            <a href="aviso-legal.html"><h4 class="hover:text-sky-400 w-fit">Aviso legal</h4></a>
+          </div>
+          <div class="text-slate-50">
+            <a href="politica-de-privacidad.html"><h4 class="hover:text-sky-400 w-fit">Política de privacidad</h4></a>
+          </div>
+        </div>
+        
+      </footer>
+    <script src="resources/js/langDropdown.js"></script>
+    <script src="resources/js/transitions.js" ></script>
+  </body>
+</html>

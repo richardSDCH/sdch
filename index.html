@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDCH | Finance & Trade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-newsreader {
+        font-family: 'Newsreader', serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#FFF0E5] text-gray-900 font-newsreader">
+    <header class="relative h-screen">
+      <div class="absolute inset-0 bg-cover bg-center bg-[url(resources/images/simon-berger-twukN12EN7c-unsplash-cropped.jpg)] transition-opacity duration-[2000ms] opacity-100 z-0" id="bg1"></div>
+      <div class="absolute inset-0 bg-cover bg-center bg-[url(resources/images/diego-jimenez-A-NVHPka9Rk-unsplash.jpg)] transition-opacity duration-[2000ms] opacity-0 z-0" id="bg2"></div>
+      <nav class="w-full flex justify-between relative z-20">
+        <div id="nav-logo" class="ml-3 relative z-10"><img class="h-16 mt-2" src="./resources/images/SDCH_logo_darkBackground.png" alt="SDCH logo"></div>
+        <div class="flex items-center h-10 pr-3">
+          <div><img id="lang-flag" class="h-5 w-5 relative z-10" src="./resources/images/EN.png" alt=""></div>
+          <div class="relative inline-block z-10">
+            <button onclick="myFunction()" id="dropbtn" class="bg-none h-8 w-10 rounded-none text-white text-lg font-medium font-sans cursor-pointer hover:bg-none focus:bg-none dropbtn">EN</button>
+            <div id="myDropdown" class="hidden absolute top-9 right-1 bg-[#FFF0E5] min-w-16 shadow-md z-30 cursor-pointer">
+              <div id="lang-option-DE" class="flex items-center justify-evenly h-8 hover:bg-[#F2DFCE]">
+                <img class="h-5 w-5" src="./resources/images/DE.png" alt="Deutsch">
+                <a class="text-cyan-900 text-lg font-sans font-medium no-underline block" href="de.html">DE</a>
+              </div>
+              <div id="lang-option-ES" class="flex items-center justify-evenly h-8 hover:bg-[#F2DFCE]">
+                <img class="h-5 w-5" src="./resources/images/ES.png" alt="Español">
+                <a class="text-cyan-900 text-lg font-sans font-medium no-underline block" href="es.html">ES</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="w-full h-full flex justify-center relative z-10">
+        <h1 class="text-slate-50 font-medium leading-none text-[3.5rem] pt-52">Your finances, your dreams</h1>
+      </div>
+      <p id="credit1" class="absolute bottom-2 right-2 z-20 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded opacity-100 transition-opacity duration-[2000ms] ease-in-out">
+        Photo by <a href="https://unsplash.com/@simon_berger?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Simon Berger</a> on <a href="https://unsplash.com/photos/landscape-photography-of-mountains-twukN12EN7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </p>
+      <p id="credit2" class="absolute bottom-2 right-2 z-20 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded opacity-0 transition-opacity duration-[2000ms] ease-in-out">
+        Photo by <a href="https://unsplash.com/@diegojimenez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Diego Jimenez</a> on <a href="https://unsplash.com/photos/lone-road-going-to-mountains-A-NVHPka9Rk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </p>
+    </header>
+    <main>
+      <div class="w-full h-[35rem] flex items-center">
+        <h3 class="text-3xl text-slate-800 font-medium w-4/5 ml-[10%] leading-normal">Our mission is to empower individuals to achieve their goals and dreams by helping them understand the financial concepts and trends that matter—so they can make informed, confident decisions about their money.</h3>
+      </div>
+      <div id="container-1" class="w-screen flex bg-[#FFF7EF]">
+        <div class="w-1/2"><img src="./resources/images/brooke-cagle-JBwcenOuRCg-unsplash.jpg" alt="Young woman cheerful holding a tablet" title="Photo by Brooke Cagle on Unsplash"></div>
+        <div class="w-1/2">
+          <h2 class="text-4xl mt-24 font-semibold text-cyan-900 w-4/5 ml-[15%] leading-tight">We're here to guide. Not to sell</h2>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Empowering your financial journey</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">We provide tools and content to help you build a stronger relationship with money — one based on understanding, not anxiety.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">No pressure, just perspective</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Our goal is to offer support, not sales pitches. You’ll never be pushed toward a product — only pointed toward clarity.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Learn at your pace</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Whether you’re just starting out or already exploring your next steps, we meet you where you are with insights that respect your path.</p>
+        </div>
+      </div>
+      <div id="container-2" class="w-screen flex bg-[#FFF7EF]">
+        <div class="w-1/2">
+          <h2 class="text-4xl mt-20 font-semibold text-cyan-900 w-4/5 ml-[15%] leading-tight">Finance can feel complex.<br> It doesn't have to be</h2>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">We decode financial trends</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">From interest rates to inflation headlines, we explain what’s happening — and what it actually means for you — in simple, actionable terms.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Multi-platform content</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Find our latest insights on Medium, LinkedIn, Instagram, and YouTube — including short podcasts, carousel posts, and quick videos designed for real people.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Education through context and history</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Alongside market updates, we share educational and historical posts to help you understand how the financial system works — and how it got here.</p>
+        </div>
+        <div class="w-1/2"><img src="./resources/images/markus-spiske-XrIfY_4cK1w-unsplash.jpg" alt="Paper with financial graph" title="Photo by Markus Spiske on Unsplash"></div>
+      </div>
+      <div id="container-3" class="w-screen flex bg-[#FFF7EF]">
+        <div class="w-1/2"><img src="./resources/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="Young man cheerful holding a mobile phone" title="Photo by Bruce Mars on Unsplash"></div>
+        <div class="w-1/2">
+          <h2 class="text-4xl mt-20 font-semibold text-cyan-900 w-2/3 ml-[15%] leading-tight">We help you filter the signal from the noise</h2>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Spot what truly matters</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Markets move fast. We help you focus on the drivers behind the data — not just the buzz around it.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Turn clarity into confidence</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Knowing what’s important lets you move forward with intention. We make it easier to connect the dots from your means to your goals.</p>
+          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Less distraction, more direction</h3>
+          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">We keep our content sharp and useful — so you spend less time guessing and more time moving in the right direction.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="flex bg-sky-900">
+      <div id="name-address" class="ml-12 mt-12">
+        <h4 class="font-semibold text-slate-50 mb-2">SDCH Handelslösungen UG</h4>
+        <div class="text-slate-50">
+          <a href="imprint.html"><h4 class="hover:text-sky-400 w-fit">Imprint</h4></a>
+        </div>
+        <div class="text-slate-50">
+          <a href="privacy-policy.html"><h4 class="hover:text-sky-400 w-fit">Privacy Policy</h4></a>
+        </div>
+      </div>
+      <div id="disclaimer" class="text-slate-300 ml-20 mt-12 mb-12 w-[70%] text-justify">
+        <h3 class="text-2xl font-semibold text-center text-slate-50">Disclaimer</h3>
+        <p class="leading-snug mt-4">Ricardo Henriquez, Managing Director of SDCH Handelslösungen UG and author of most of the content
+           published on this website, holds a Level 4 Diploma in Financial Advice from The London Institute
+            of Banking and Finance. However, neither SDCH Handelslösungen UG nor Ricardo Henriquez is currently
+             authorised to provide investment advice within the meaning of German and European financial regulation.</p>
+        <p class="leading-snug mt-2 mb-2">In particular, none of the content published on this website or on any linked social media channels constitutes investment 
+          advice as defined under:</p>
+        <ul class="list-disc ml-6">
+          <li>§ 1 (1a) No. 1a of the German Banking Act <span class="text-slate-50 font-medium">(Kreditwesengesetz – KWG)</span></li>
+          <li>§ 2 (2) No. 4 of the German Securities Institutions Act <span class="text-slate-50 font-medium">(Wertpapierinstitutsgesetz – WpIG)</span></li>
+          <li>Art. No. 1 (4) of the Directive 2014/65/EU of the European Parliament and of the Council of 15 May 2014
+            on markets in financial instruments and amending Directive 2002/92/EC and Directive 2011/61/EU <span class="text-slate-50 font-medium">(MiFID II)</span></li>
+        </ul>
+        <p class="leading-snug mt-2">These legal provisions define investment advice as the issuance of personal recommendations to clients regarding transactions 
+          in specific financial instruments, where such recommendations are either based on an individual’s personal circumstances or 
+          presented as suitable for them.</p>
+        <p class="leading-snug mt-2">The content provided here is made available to the general public through information dissemination channels and is intended solely as generic guidance for informational 
+          and educational purposes. It does not constitute a recommendation to take (or refrain from taking) any specific financial or investment action.</p>
+        <p class="leading-snug mt-2 font-semibold text-slate-50">Past performance is not a reliable indicator of future results.</p>
+        <p class="leading-snug mt-2">All investment decisions carry risks, and individuals should always consult a licensed and authorised financial advisor before making any financial or investment decisions.</p>
+      </div>
+    </footer>
+    <script src="resources/js/langDropdown.js"></script>
+    <script src="resources/js/transitions.js" ></script>
+  </body>
+</html>
