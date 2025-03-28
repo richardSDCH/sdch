@@ -29,31 +29,31 @@
     </style>
   </head>
   <body class="bg-[#FFF7EF] text-slate-900 font-newsreader">
-    <header class="relative h-screen">
+    <header class="relative h-[50vh] sm:h-screen">
       <div class="absolute inset-0 bg-cover bg-center bg-[url(resources/images/simon-berger-twukN12EN7c-unsplash-cropped.jpg)] transition-opacity duration-[2000ms] opacity-100 z-0" id="bg1"></div>
       <div class="absolute inset-0 bg-cover bg-center bg-[url(resources/images/diego-jimenez-A-NVHPka9Rk-unsplash.jpg)] transition-opacity duration-[2000ms] opacity-0 z-0" id="bg2"></div>
       <div class="absolute inset-0 bg-cover bg-center bg-[url(resources/images/william-bout-7cdFZmLlWOM-unsplash.jpg)] transition-opacity duration-[2000ms] opacity-0 z-0" id="bg3"></div>
       <nav class="w-full flex justify-between relative z-20">
         <div id="nav-logo" class="ml-3 relative z-10"><img class="h-16 mt-2" src="./resources/images/SDCH_logo_darkBackground.png" alt="SDCH logo"></div>
         <div class="flex items-center h-10 pr-3">
-          <div><img id="lang-flag" class="h-5 w-5 relative z-10" src="./resources/images/EN.png" alt=""></div>
+          <div><img id="lang-flag" class="h-5 w-5 mt-2 sm:mt-0 relative z-10" src="./resources/images/EN.png" alt=""></div>
           <div class="relative inline-block z-10">
-            <button onclick="myFunction()" id="dropbtn" class="bg-none h-8 w-10 rounded-none text-white text-lg font-medium font-sans cursor-pointer hover:bg-none focus:bg-none dropbtn">EN</button>
+            <button onclick="myFunction()" id="dropbtn" class="bg-none w-12 h-8 sm:w-10 pt-2 sm:pt-0 rounded-none text-white text-xl sm:text-lg font-medium font-sans cursor-pointer hover:bg-none focus:bg-none dropbtn">EN</button>
             <div id="myDropdown" class="hidden absolute top-9 right-1 bg-[#FFF0E5] min-w-16 shadow-md z-30 cursor-pointer">
               <div id="lang-option-DE" class="flex items-center justify-evenly h-8 hover:bg-[#F2DFCE]">
                 <img class="h-5 w-5" src="./resources/images/DE.png" alt="Deutsch">
-                <a class="text-cyan-900 text-lg font-sans font-medium no-underline block" href="de.html">DE</a>
+                <a class="text-cyan-900 text-xl sm:text-lg font-sans font-medium no-underline block" href="de.html">DE</a>
               </div>
               <div id="lang-option-ES" class="flex items-center justify-evenly h-8 hover:bg-[#F2DFCE]">
                 <img class="h-5 w-5" src="./resources/images/ES.png" alt="Español">
-                <a class="text-cyan-900 text-lg font-sans font-medium no-underline block" href="es.html">ES</a>
+                <a class="text-cyan-900 text-xl sm:text-lg font-sans font-medium no-underline block" href="es.html">ES</a>
               </div>
             </div>
           </div>
         </div>
       </nav>
       <div class="w-full h-full flex justify-center relative z-10">
-        <h1 class="text-slate-50 font-medium leading-none text-[3.5rem] pt-52">Your finances, your dreams</h1>
+        <h1 class="text-slate-50 font-medium leading-tight text-center text-[2.5rem] w-3/4 sm:text-[3.5rem] pt-20 sm:pt-52">Your finances, your dreams</h1>
       </div>
       <p id="credit1" class="absolute bottom-2 right-2 z-20 text-white text-xs bg-black bg-opacity-100 px-2 py-1 rounded opacity-100 transition-opacity duration-[2000ms] ease-in-out">
         Photo by <a href="https://unsplash.com/@simon_berger?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Simon Berger</a> on <a href="https://unsplash.com/photos/landscape-photography-of-mountains-twukN12EN7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -66,8 +66,8 @@
       </p>
     </header>
     <main>
-      <section class="w-full h-[44rem]">
-        <h2 class="text-3xl font-semibold text-center mt-16 mb-10 text-sky-900">Latest from our social media</h2>
+      <section id="social-media" class="w-full sm:py-12">
+        <h2 class="text-xl sm:text-3xl font-semibold text-center mt-8 mb-6 sm:mt-2 sm:mb-10 text-sky-900">Latest from our social media</h2>
         <div id="cards-space" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           <a id="card-medium" href="" class="bg-[#F2DFCE] hover:bg-[#FCD0B1] rounded-xl shadow-sm p-4 hover:shadow-md transition">
             <img src="./resources/images/Medium_(website)_logo.svg" class="h-7 mt-2 ml-3" alt="Medium logo" title="By A Medium Corporation - Karene Tropen (October 14, 2020). A more expressive Medium — starting with Medium ('Logomark') (in en). blog.medium.com.m, Public Domain, https://commons.wikimedia.org/w/index.php?curid=108833695">
@@ -88,50 +88,50 @@
             <h4 class="text-lg w-[85%] text-center leading-6 mx-auto mt-4 mb-2">Your money's relationship with time is closer than you might think.</h4>
           </a>
         </div>
-        <div class="flex items-center justify-evenly w-[60%] ml-[20%] gap-6 mt-9 pb-4">
+        <div class="flex items-center justify-evenly w-[60%] ml-[20%] gap-6 sm:mt-9">
           <a class="h-28 w-28 rounded-xl flex justify-center items-center hover:bg-[#F2DFCE]" href=""><img class="h-20" src="./resources/images/linkedin-color-svgrepo-com.svg"></a>
           <a class="h-28 w-28 rounded-xl flex justify-center items-center hover:bg-[#F2DFCE]" href=""><img class="h-20" src="./resources/images/instagram-social-media-network-communication-interaction-connection-svgrepo-com.svg"></a>
           <a class="h-28 w-28 rounded-xl flex justify-center items-center hover:bg-[#F2DFCE]" href=""><img class="h-20" src="./resources/images/youtube-svgrepo-com.svg"></a>
           <a class="h-28 w-28 rounded-xl flex justify-center items-center hover:bg-[#F2DFCE]" href=""><img class="h-20" src="./resources/images/medium-icon-svgrepo-com.svg"></a>
         </div>        
       </section>
-      <section class="w-full h-[30rem] flex items-center bg-[#FFF0E5]">
-        <h3 class="text-3xl text-slate-800 font-medium w-4/5 ml-[10%] leading-normal">Our mission is to empower individuals to achieve their goals and dreams by helping them understand the financial concepts and trends that matter—so they can make informed, confident decisions about their money.</h3>
+      <section id="mission" class="w-full py-12 sm:py-36 px-4 flex items-center bg-[#FFF0E5]">
+        <h3 class="text-xl sm:text-3xl sm:leading-normal text-slate-800 font-medium w-4/5 ml-[10%] leading-normal">Our mission is to empower individuals to achieve their goals and dreams by helping them understand the financial concepts and trends that matter—so they can make informed, confident decisions about their money.</h3>
       </section>
-      <section id="container-1" class="w-screen flex">
-        <div class="w-1/2"><img src="./resources/images/brooke-cagle-JBwcenOuRCg-unsplash.jpg" alt="Young woman cheerful holding a tablet" title="Photo by Brooke Cagle on Unsplash"></div>
-        <div class="w-1/2">
-          <h2 class="text-4xl mt-24 font-semibold text-cyan-900 w-4/5 ml-[15%] leading-tight">We're here to guide. Not to sell</h2>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Empowering your financial journey</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">We provide tools and content to help you build a stronger relationship with money — one based on understanding, not anxiety.</p>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">No pressure, just perspective</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Our goal is to offer support, not sales pitches. You’ll never be pushed toward a product — only pointed toward clarity.</p>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Learn at your pace</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Whether you’re just starting out or already exploring your next steps, we meet you where you are with insights that respect your path.</p>
+      <section id="container-1" class="w-full flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2"><img src="./resources/images/brooke-cagle-JBwcenOuRCg-unsplash.jpg" alt="Young woman cheerful holding a tablet" title="Photo by Brooke Cagle on Unsplash"></div>
+        <div class="w-full md:w-1/2">
+          <h2 class="text-2xl sm:text-4xl mt-12 sm:mt-24 font-semibold text-cyan-900 w-2/3 sm:w-4/5 ml-[15%] leading-tight">We're here to guide. Not to sell</h2>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Empowering your financial journey</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug sm:leading-snug mt-2 w-2/3 ml-[15%]">We provide tools and content to help you build a stronger relationship with money — one based on understanding, not anxiety.</p>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">No pressure, just perspective</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug mt-2 w-2/3 ml-[15%]">Our goal is to offer support, not sales pitches. You’ll never be pushed toward a product — only pointed toward clarity.</p>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Learn at your pace</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug mt-2 mb-12 sm:mb-0 w-2/3 ml-[15%]">Whether you’re just starting out or already exploring your next steps, we meet you where you are with insights that respect your path.</p>
         </div>
       </section>
-      <section id="container-2" class="w-screen flex">
-        <div class="w-1/2">
-          <h2 class="text-4xl mt-20 font-semibold text-cyan-900 w-4/5 ml-[15%] leading-tight">Finance can feel complex.<br> It doesn't have to be</h2>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">We decode financial trends</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">From interest rates to inflation headlines, we explain what’s happening — and what it actually means for you — in simple, actionable terms.</p>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Multi-platform content</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Find our latest insights on Medium, LinkedIn, Instagram, and YouTube — including short podcasts, carousel posts, and quick videos designed for real people.</p>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Education through context and history</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Alongside market updates, we share educational and historical posts to help you understand how the financial system works — and how it got here.</p>
+      <section id="container-2" class="w-full flex flex-col-reverse md:flex-row">
+        <div class="w-full md:w-1/2">
+          <h2 class="text-2xl sm:text-4xl mt-12 sm:mt-24 font-semibold text-cyan-900 w-4/5 ml-[15%] leading-tight">Finance can feel complex.<br> It doesn't have to be</h2>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">We decode financial trends</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug mt-2 w-2/3 ml-[15%]">From interest rates to inflation headlines, we explain what’s happening — and what it actually means for you — in simple, actionable terms.</p>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Multi-platform content</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug mt-2 w-2/3 ml-[15%]">Find our latest insights on Medium, LinkedIn, Instagram, and YouTube — including short podcasts, carousel posts, and quick videos designed for real people.</p>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Education through context and history</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug mt-2 mb-12 w-2/3 ml-[15%]">Alongside market updates, we share educational and historical posts to help you understand how the financial system works — and how it got here.</p>
         </div>
-        <div class="w-1/2"><img src="./resources/images/markus-spiske-XrIfY_4cK1w-unsplash.jpg" alt="Paper with financial graph" title="Photo by Markus Spiske on Unsplash"></div>
+        <div class="w-full md:w-1/2"><img src="./resources/images/markus-spiske-XrIfY_4cK1w-unsplash.jpg" alt="Paper with financial graph" title="Photo by Markus Spiske on Unsplash"></div>
       </section>
-      <section id="container-3" class="w-screen flex">
-        <div class="w-1/2"><img src="./resources/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="Young man cheerful holding a mobile phone" title="Photo by Bruce Mars on Unsplash"></div>
-        <div class="w-1/2">
-          <h2 class="text-4xl mt-20 font-semibold text-cyan-900 w-2/3 ml-[15%] leading-tight">We help you filter the signal from the noise</h2>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Spot what truly matters</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Markets move fast. We help you focus on the drivers behind the data — not just the buzz around it.</p>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Turn clarity into confidence</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">Knowing what’s important lets you move forward with intention. We make it easier to connect the dots from your means to your goals.</p>
-          <h3 class="text-2xl mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Less distraction, more direction</h3>
-          <p class="text-slate-600 text-xl leading-snug mt-3 w-2/3 ml-[15%]">We keep our content sharp and useful — so you spend less time guessing and more time moving in the right direction.</p>
+      <section id="container-3" class="w-full flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2"><img src="./resources/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg" alt="Young man cheerful holding a mobile phone" title="Photo by Bruce Mars on Unsplash"></div>
+        <div class="w-full md:w-1/2">
+          <h2 class="text-2xl sm:text-4xl mt-12 sm:mt-24 font-semibold text-cyan-900 w-2/3 ml-[15%] leading-tight">We help you filter the signal from the noise</h2>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Spot what truly matters</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug mt-2 w-2/3 ml-[15%]">Markets move fast. We help you focus on the drivers behind the data — not just the buzz around it.</p>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Turn clarity into confidence</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug mt-2 w-2/3 ml-[15%]">Knowing what’s important lets you move forward with intention. We make it easier to connect the dots from your means to your goals.</p>
+          <h3 class="text-xl sm:text-2xl mt-4 sm:mt-8 text-slate-800 font-semibold w-4/5 ml-[15%]">Less distraction, more direction</h3>
+          <p class="text-slate-600 sm:text-xl leading-snug mt-2 mb-12 w-2/3 ml-[15%]">We keep our content sharp and useful — so you spend less time guessing and more time moving in the right direction.</p>
         </div>
       </section>
     </main>
